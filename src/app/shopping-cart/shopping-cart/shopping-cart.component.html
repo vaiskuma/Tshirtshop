@@ -1,0 +1,28 @@
+<div *ngIf="isOpen" class="c-Modal">
+  <div class="c-Modal-Body">
+
+    <!-- Close button -->
+    <p class="u-textAlign-center">
+      <button class="c-Button c-Button-small c-Button-primary" (click)="closeCart()">Close</button>
+    </p>
+
+    <!-- Title -->
+    <h1 class="u-flex-center u-marginBottom-l">Selected Products</h1>
+
+    <!-- Show message if no products are selected-->
+    <span *ngIf="!products">No products</span>
+
+    <!-- Total price -->
+    <p>
+      <span>Total: </span>
+      <strong>{{ totalPrice | currency }}</strong>
+    </p>
+
+    <!-- List of products -->
+    <ul class="c-Grid c-Grid-row c-Grid-wrap">
+      <li *ngFor="let cartProduct of products" class="c-Grid-Item u-3-md u-marginBottom">
+        <app-shopping-cart-item [cartProduct]="cartProduct"></app-shopping-cart-item>
+      </li>
+    </ul>
+  </div>
+</div>

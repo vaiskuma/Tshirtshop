@@ -1,0 +1,41 @@
+//
+// FRAME COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+.o-Frame {
+    padding-left: $spacing-s;
+    padding-right: $spacing-s;
+    @include md {
+        padding-left: $global-frame-spacing;
+        padding-right: $global-frame-spacing;
+    }
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// TOP
+//////////////////////////////////////////////////////////////////////
+
+
+.o-Frame-top {
+    padding-top: $global-frame-spacing;
+    padding-right: $spacing-s;
+    padding-left: $spacing-s;
+    @include md {
+        padding-top: $global-frame-spacing;
+        padding-right: $global-frame-spacing;
+        padding-left: $global-frame-spacing;
+    }
+}

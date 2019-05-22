@@ -1,0 +1,34 @@
+//
+// MODAL COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+.c-Modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: $global-frame-spacing;
+    overflow: auto;
+  }
+
+.c-Modal-Body {
+    background-color: white;
+    padding: $spacing;
+}
+  
+  
+  

@@ -1,0 +1,50 @@
+//
+// HEADER COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// HEADER
+//
+
+.c-Header {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: -30%;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: $global-color-neurtal;
+    }
+}
+
+
+
+//
+// HEADER
+//
+
+.c-Header-Content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 54px;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

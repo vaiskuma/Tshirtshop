@@ -1,0 +1,65 @@
+//
+// COLOR UTILITIES
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// COLORS
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// Colors are prefixt with "u-color"
+//
+
+.u-color-text {
+    color: $global-color-text !important;
+}
+.u-color-primary {
+    color: $global-color-primary !important;
+}
+
+.u-color-plane {
+    color: white !important;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// BACKGROUND COLORS
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// Background colors are prefixt with "u-bkg"
+//
+
+
+.u-bkg-white {
+    background-color: white !important;
+}
+
+.u-bkg-light {
+    background-color: $global-color-light !important;
+}
+
+.u-bkg-blue {
+    background-color: #DFF3FC;
+}
+
+.u-bkg-green {
+    background-color: #F1FCF2;
+}
+
+.u-bkg-grey {
+    background-color: $global-color-light;
+}
+
+.u-bkg-orange {
+    background-color: #FDF1EF;
+}

@@ -1,0 +1,7 @@
+<div>
+  <label>{{ name | uppercase }}: </label>
+  <select (change)="onSelect($event.target.value)">
+    <option value="">ALL</option>
+    <option [ngValue]="item" *ngFor="let item of items">{{ item | uppercase}}</option>
+  </select>
+</div>

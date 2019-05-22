@@ -1,0 +1,134 @@
+//
+// ICON COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// ICON
+//
+
+.c-Icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// SIZE MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+.c-Icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
+
+.c-Icon-48 {
+    width: 48px;
+    height: 48px;
+}
+
+
+.c-Icon-l {
+    width: $spacing-l;
+    height: $spacing-l;
+}
+
+
+.c-Icon-xl {
+    width: $spacing-xl;
+    height: $spacing-xl;
+}
+
+//////////////////////////////////////////////////////////////////////
+// COLOR MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+.c-Icon-neutral {
+    background-color: $global-color-light-grey;
+}
+
+.c-Icon-primary {
+    background-color: $global-color-primary;
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// SHAPE MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+.c-Icon-circle {
+    border-radius: 100em;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// ICONS
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// LINKEDIN
+//
+
+.c-Icon-linkedin {
+    background-image: url('/images/icons/linkedin.svg')
+}
+
+
+//
+// LINKEDIN
+//
+
+.c-Icon-email {
+    background-image: url('/images/icons/email.svg')
+}
+
+
+//
+// LOADING
+//
+
+.c-Icon-loading {
+    display: inline-block;
+    &:after {
+        content: " ";
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid $global-color-primary;
+        border-color: $global-color-primary transparent $global-color-primary transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,7 @@
+.trigger {
+	display: inline-block;
+	cursor: pointer;
+}
+.trigger:hover {
+	color: orange;
+}

@@ -1,0 +1,50 @@
+//
+// JUMBOTRON COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// JUMBOTRON
+//
+
+.c-Jumbotron {
+    @include md {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+//
+// IMAGE
+//
+
+//
+// 1. Center the image
+//
+
+.c-Jumbotron-Image {
+    text-align: center;
+    margin: auto; // 1
+}
+
+
+//
+// TEXT
+//
+
+.c-Jumbotron-Text {
+    max-width: 600px;
+    @include md {
+        margin-left: $spacing;
+    }
+}

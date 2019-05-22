@@ -1,0 +1,69 @@
+//
+// BREAK POINTS
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// UNITS
+//////////////////////////////////////////////////////////////////////
+
+
+$screen-sm-min: 576px;
+$screen-md-min: 992px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// MIXIN
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// SMALL
+//
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+
+//
+// MEDIUM
+//
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+
+//
+// LARGE
+//
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+
+//
+// EXTRA LARGE
+//
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}

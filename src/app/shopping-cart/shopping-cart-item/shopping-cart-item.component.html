@@ -1,0 +1,41 @@
+<div class="c-Card">
+
+	<!-- Image -->
+	<div class="c-Card-Background">
+		<img class="c-Card-Image" [src]="cartProduct.product.picture"  style="width:180px" alt="">
+	</div>
+	
+	<!-- Content -->
+	<div class="c-Card-Content">
+
+		<!-- Title -->
+		<h4>{{ cartProduct.product.name }}</h4>
+
+		<!-- Quantity Section -->
+		<div class="u-marginBottom">
+			<span>Quantity: </span>
+			<strong *ngIf="!editModeActive">{{ cartProduct.selectedQuantity}}</strong>
+			<span *ngIf="editModeActive">
+				<input type="number" [(ngModel)]="cartProduct.selectedQuantity">
+			</span>
+			<br>
+			<span>Price per unit: </span>
+			<strong>{{ pricePerUnit | currency }}</strong>
+			<br>
+		</div>
+
+		<!-- Total Price -->
+		<div>
+			<strong>Total: </strong>
+			<strong>{{ totalPrice | currency }}</strong>
+		</div>
+
+		<!-- Actions -->
+		<div>
+			<button *ngIf="editModeActive" class="c-Button c-Button-primary c-Button-small u-marginRight-s" (click)="save()">Save</button>
+			<button *ngIf="!editModeActive" class="c-Button c-Button-small u-marginRight-s" (click)="activateEditMode()">Edit</button>
+			<button class="c-Button c-Button-small" (click)="removeProduct()">Remove</button>
+		</div>
+
+	</div>
+</div>

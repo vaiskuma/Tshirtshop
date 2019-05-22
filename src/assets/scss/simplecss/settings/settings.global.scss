@@ -1,0 +1,62 @@
+//
+// GLOBAL VARIABLES
+//
+
+//
+// The global settings file contains any project-wide variables.
+// Everything that needs to be available to the entire codebase.
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// COLORS
+//////////////////////////////////////////////////////////////////////
+
+
+$global-color-primary: #457EAC !default;
+$global-color-secondary: #88AB75 !default;
+$global-color-tertiary: #DE8F6E !default;
+$global-color-grey: #2F4858 !default;
+$global-color-light-grey: rgb(233, 237, 241) !default;
+$global-color-light: #F2F2F2 !default;
+$global-color-neurtal: $global-color-light-grey;
+$global-color-text: $global-color-grey !default;
+$global-color-active: $global-color-primary !default;
+
+
+
+//////////////////////////////////////////////////////////////////////
+// FONT SIZE
+//////////////////////////////////////////////////////////////////////
+
+
+$font-size-unit: 1rem !default;
+$font-size: $font-size-unit !default;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// TEXT
+//////////////////////////////////////////////////////////////////////
+
+
+$global-text-color: $global-color-grey !default;
+$global-text-color-active: $global-color-primary !default;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// STANDART UI 
+//////////////////////////////////////////////////////////////////////
+
+
+$global-border: 1px solid $global-color-light-grey !default;
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;

@@ -1,0 +1,14 @@
+<!--Filters -->
+<app-select *ngFor="let filter of availableFilters" [name]="filter.name" [items]="filter.items" (selected)="onSelected($event)"></app-select>
+
+<!-- Display message if no products available-->
+ <p *ngIf="!filteredProducts.length">No products available</p>
+
+<!-- List of products -->
+<ul *ngIf="filteredProducts.length" class="c-Grid c-Grid-row c-Grid-wrap" style="font-family:fonta-bold">
+  <li *ngFor="let product of filteredProducts" class="c-Grid-Item u-2-s u-3-md">
+    <a [routerLink]="['/product', product.id]">
+      <app-product-item [product]="product"></app-product-item>
+    </a>
+  </li>
+</ul> 

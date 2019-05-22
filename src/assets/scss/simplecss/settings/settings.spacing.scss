@@ -1,0 +1,67 @@
+//
+// SPACING
+//
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+$spacing-unit: 4px !default;
+
+$spacing-xs: $spacing-unit      !default;
+$spacing-s:  $spacing-unit * 4  !default;
+$spacing:    $spacing-unit * 8  !default;
+$spacing-l:  $spacing-unit * 16 !default;
+$spacing-xl: $spacing-unit * 32 !default;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// PADDING
+//////////////////////////////////////////////////////////////////////
+
+
+$padding-xs: $spacing-xs !default;
+$padding-s:  $spacing-s  !default;
+$padding:    $spacing    !default;
+$padding-l:  $spacing-l  !default;
+$padding-xl: $spacing-xl !default;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// MARGIN
+//////////////////////////////////////////////////////////////////////
+
+
+$margin-xs: $spacing-xs !default;
+$margin-s:  $spacing-s  !default;
+$margin:    $spacing    !default;
+$margin-l:  $spacing-l  !default;
+$margin-xl: $spacing-xl !default;
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// FRAME SPACING
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// BASE SPACING 
+//
+
+//
+// Should be used for achieving equal distance through different ui 
+// components. 
+//
+
+$global-frame-spacing: $spacing-xl;

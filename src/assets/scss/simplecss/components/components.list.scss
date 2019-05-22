@@ -1,0 +1,98 @@
+//
+// LIST COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// LIST
+//
+
+.c-List {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+
+//
+// ITEM
+//
+
+.c-List-Item {
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// DIRECTION MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+.c-List-column {
+    flex-direction: column;
+
+    .c-List-Item {
+        margin-bottom: $spacing-s;
+    }
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// TYPE MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// DASH
+//
+
+.c-List-dash {
+    .c-List-Item {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 2px;
+            top: calc(#{1em} / 2 - 1px);
+            right: 100%;
+            background-color: $global-color-secondary;
+        }
+    }
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// SPACING MODIFIERS
+//////////////////////////////////////////////////////////////////////
+
+
+.c-List-gutter {
+    .c-List-Item {
+        margin-right: $spacing;
+        margin-bottom: $spacing;
+    }
+}

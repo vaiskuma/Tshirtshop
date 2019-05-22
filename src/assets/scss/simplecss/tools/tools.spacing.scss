@@ -1,0 +1,40 @@
+
+//
+// TOP
+//
+
+$spacing-unit: 4px !default;
+$none: none;
+$spacing-xs: $spacing-unit      !default;
+$spacing-s:  $spacing-unit * 4  !default;
+$spacing:    $spacing-unit * 8  !default;
+$spacing-l:  $spacing-unit * 16 !default;
+$spacing-xl: $spacing-unit * 32 !default;
+
+
+
+$sides: "top" "Top", "right" "Right", "left" "Left", "bottom" "Bottom";
+$sizes: "xs" $spacing-xs, "s" $spacing-s, "" $spacing, "l" $spacing-l, "xl" $spacing-xl;
+
+//
+// 1. $specingType - padding or margin
+//
+
+@mixin spacing-mixin($spacingType) {
+    @each $i in $sides{
+        @each $j in $sizes {
+            @if nth($j, 1) != "" {
+                .u-#{$spacingType}#{nth($i, 2)}-#{nth($j, 1)} {
+                    margin-#{nth($i, 1)}: #{nth($j, 2)};
+                }            
+            }@else{
+                .u-margin#{nth($i, 2)} {
+                    margin-#{nth($i, 1)}: #{nth($j, 2)};
+                }  
+            }
+        }
+    }
+}
+
+// @include spacing-mixin();
+

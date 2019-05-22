@@ -1,0 +1,12 @@
+<div *ngIf="product" class="o-Frame o-Frame-top">
+  
+  <!-- Back button -->
+  <div>
+    <a routerLink="/products">Back</a>
+  </div>
+
+  <!-- Product Info -->
+  <h1 class="u-textAlign-center">{{ product.name }}</h1>
+  <img class="product-image" [src]="product.picture" alt="">
+  <button (click)="addToBasket()" class="c-Button c-Button-primary">{{ buttonText }}</button>
+</div>

@@ -1,0 +1,140 @@
+//
+// SPACING UTILITIES
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// MARGIN
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// CORE
+//
+
+.u-margin-xs    { margin: $margin-xs !important; }
+.u-margin-s     { margin: $margin-s !important; }
+.u-margin       { margin: $margin !important; }
+.u-margin-l     { margin: $margin-xl !important; }
+.u-margin-xl    { margin: $margin-xl !important; }
+
+
+//
+// NONE
+//
+
+.u-margin-none    { margin: 0 !important; }
+
+
+//
+// SIDE SPECIFIC
+//
+
+//
+// Generates classes for every side and with every spacing unit.
+// Example classes:
+// u-marginLeft-xs
+// u-marginLeft-s
+// u-marginLeft-
+// u-marginLeft-l
+// ...
+//
+
+@include spacing-mixin('margin');
+
+
+
+
+
+// //////////////////////////////////////////////////////////////////////
+// // PADDING
+// //////////////////////////////////////////////////////////////////////
+
+
+//
+// CORE
+//
+
+.u-padding-xs    { padding: $padding-xs !important; }
+.u-padding-s     { padding: $padding-s !important; }
+.u-padding       { padding: $padding !important; }
+.u-padding-l     { padding: $padding-xl !important; }
+.u-padding-xl    { padding: $padding-xl !important; }
+
+
+//
+// NONE
+//
+
+.u-padding-none { padding: 0 !important; }
+
+
+//
+// SIDE SPECIFIC
+//
+
+//
+// Generates classes for every side and with every spacing unit.
+// Example classes:
+// u-paddingTop-xs
+// u-paddingTop-s
+// u-paddingTop-
+// u-paddingTop-l
+// ...
+//
+
+@include spacing-mixin('padding');
+
+.u-paddingLeft\@m {
+	@include md {
+		padding-left: $spacing;
+	}
+}
+
+
+//
+// VERTICAL PADDING
+//
+
+.u-padding-vertical {
+	padding-top: $spacing-l;
+	padding-bottom: $spacing-l;
+
+	@include md {
+		padding-top: $spacing-xl;
+		padding-bottom: $spacing-xl;
+	}
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// GENERAL SPACINGS
+//////////////////////////////////////////////////////////////////////
+
+
+.u-spacing-vertical {
+	margin-top: $spacing-l;
+	margin-bottom: $spacing-l;
+
+	@include md {
+		margin-top: $spacing-xl;
+		margin-bottom: $spacing-xl;
+	}
+}
+
+
+.u-spacing-vertical-l {
+	margin-top: $spacing-l;
+	margin-bottom: $spacing-l;
+
+	@include md {
+		margin-top: $spacing-l;
+		margin-bottom: $spacing-l;
+	}
+}

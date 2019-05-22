@@ -1,0 +1,122 @@
+//
+// SECTION COMPONENT
+//
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// CORE
+//////////////////////////////////////////////////////////////////////
+
+
+//
+// SECTION
+//
+
+.c-Section {
+    position: relative;
+    margin-bottom: 2 * $spacing-xl;
+    padding-bottom: $spacing-xl;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 1px); // 1
+        width: 2px; // 1
+        height: $spacing-xl;
+        background-color: $global-color-light-grey;
+    }
+}
+
+
+//
+// TITLE
+//
+
+.c-Section-Title {
+    text-align: center;
+    margin-bottom: $spacing-l;
+
+    @include md {
+        text-align: left;
+    }
+}
+
+
+//
+// BODY
+//
+
+.c-Section-Body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    @include md {
+        flex-direction: row;
+    }
+
+}
+
+
+//
+// CONTENT
+//
+
+.c-Section-Content {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    @include md {
+        text-align: left;
+    }
+
+}
+
+
+//
+// IMAGE
+//
+
+//
+// 1. Clears default figure element margin
+//
+
+.c-Section-Figure {
+    display: block;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-top: 0; // 1
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+// REVERSE SECTION
+//////////////////////////////////////////////////////////////////////
+
+
+.c-Section-reverse {
+    .c-Section-Content {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        @include md {
+            display: flex;
+            text-align: right;
+        }
+    }
+    .c-Section-Figure {
+        @include md {
+            order: 1;
+        }
+    }
+}
