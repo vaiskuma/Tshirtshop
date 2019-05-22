@@ -7,11 +7,15 @@
 - should have option to filter by size and/or colour
 - should have option to click on a shirt and see details
 
+![T-shirt shop default page]('./src/assets/images/Tshirt first page.png' "T-shirt shop default page)
+
 ### Details page:
 - show details of selected shirt
 - each shirt should have a "Add to basket" button
 - if item is already added the button should say "Add one more" and it should increase amount.
 - page should have "Back to list" button
+
+![Product detail page]('./src/assets/images/Tshirt shop buying.png' "Product detail page")
 
 ### Shopping cart:
 - dispayed in the top of every page
@@ -19,6 +23,8 @@
 - when clicked, a modal should open and show all items and functionality to remove item,
   change quantity and see total price
 - when page is reloaded, the shopping cart items should be saved
+
+![Shopping cart page]('./src/assets/images/Tshirt shop cart.png' "Shopping cart page")
 
 ### Technicalities
 - It should be e built using Angular (NOT angular.js)
