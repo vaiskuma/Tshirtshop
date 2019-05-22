@@ -7,7 +7,8 @@
 - should have option to filter by size and/or colour
 - should have option to click on a shirt and see details
 
-![T-shirt shop default page](./src/assets/images/Tshirt first page.png)
+<img width="960" alt="Tshirt first page" src="https://user-images.githubusercontent.com/23738327/58205678-5957fa80-7cdf-11e9-8314-00824f9616c1.png">
+
 
 ### Details page:
 - show details of selected shirt
@@ -15,7 +16,7 @@
 - if item is already added the button should say "Add one more" and it should increase amount.
 - page should have "Back to list" button
 
-![Product detail page](./src/assets/images/Tshirt shop buying.png)
+<img width="960" alt="Tshirt shop buying" src="https://user-images.githubusercontent.com/23738327/58205773-87d5d580-7cdf-11e9-8933-4a133792dafd.png">
 
 ### Shopping cart:
 - dispayed in the top of every page
@@ -23,8 +24,7 @@
 - when clicked, a modal should open and show all items and functionality to remove item,
   change quantity and see total price
 - when page is reloaded, the shopping cart items should be saved
-
-![Shopping cart page](./src/assets/images/Tshirt shop cart.png)
+<img width="960" alt="Tshirt shop cart" src="https://user-images.githubusercontent.com/23738327/58205793-97551e80-7cdf-11e9-8292-388b0f435cae.png">
 
 ### Technicalities
 - It should be e built using Angular (NOT angular.js)
